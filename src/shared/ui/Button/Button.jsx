@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from 'antd';
 import './styles.module.css'; //
 
-export const RoundButton = ({ children, onClick }) => {
+export const RoundButton = ({ text, onClick }) => {
     return (
         <Button
-            className="custom-round-button"
+            className="round-button"
             onClick={onClick}
         >
-            {children}
+            {text}
         </Button>
     );
 };
