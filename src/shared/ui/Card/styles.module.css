@@ -1,7 +1,8 @@
 .my_card {
-    border-radius: 80%;
+    border-radius: 20%;
     border: #1a1a1a 3px;
-    width: 100px;
-    height: 100px;
-    color: #722ed1;
+    width: 230px;
+    height: 220px;
+    color: #000000;
+    background-color: #1b86d1;
 }

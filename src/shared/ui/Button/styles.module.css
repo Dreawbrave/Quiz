@@ -1,14 +1,9 @@
 .round-button {
-    padding: 0 25px;
-    height: 40px;
-    background: linear-gradient(45deg, #1890ff, #722ed1);
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
-    border-radius: 99%;
+    color: #000000;
+    background-color: #1b86d1;
+    border-radius: 40%;
+    border: #1b86d1;
 }
-
 .round-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
 }
