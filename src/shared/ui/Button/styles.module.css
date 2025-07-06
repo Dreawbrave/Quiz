@@ -1,9 +1,13 @@
 .round-button {
-    color: #000000;
-    background-color: #1b86d1;
-    border-radius: 40%;
-    border: #1b86d1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1890ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.round-button:hover {
 
+.round-button:hover {
+    background-color: #40a9ff;
 }

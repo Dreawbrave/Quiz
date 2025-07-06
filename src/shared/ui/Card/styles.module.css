@@ -1,8 +1,25 @@
 .my_card {
-    border-radius: 20%;
-    border: #1a1a1a 3px;
-    width: 230px;
-    height: 220px;
-    color: #000000;
-    background-color: #1b86d1;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.round-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1890ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.round-button:hover {
+    background-color: #40a9ff;
 }
