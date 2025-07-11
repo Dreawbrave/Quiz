@@ -4,10 +4,6 @@ import {Search} from "../Search/Search.jsx";
 
 export const MyHeader = () => {
     return (
-        <header
-            className={styles['myHeader']}
-        >
-            <Search/>
-        </header>
+            <Search className={styles['myHeader']}/>
     );
 };

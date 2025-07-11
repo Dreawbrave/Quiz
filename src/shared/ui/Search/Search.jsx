@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { Input, Card } from 'antd';
 
-export const Search = () => {
+export const Search = ({ className = '' }) => {
     const [searchText, setSearchText] = useState('');
 
     const onSearch = (value) => {
         console.log('Ищем:', value);
-        // вместо консоль лога поиск в БД
     };
 
     return (
-        <Card style={{ width: 300 }}>
+        <Card className={className}>
             <Input.Search
                 placeholder="Введите запрос"
                 allowClear
