@@ -1,25 +1,21 @@
-.my_card {
-    width: 500px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
+.cardTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
 .buttonsContainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.round-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: #1890ff;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.round-button:hover {
-    background-color: #40a9ff;
+    gap: 12px;
 }

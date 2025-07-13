@@ -1,19 +1,19 @@
 .round-button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    background-color: #1890ff;
+    background: #1890ff;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
     font-size: 16px;
-    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
-    min-width: 200px;
-    text-align: center;
-    margin-left: auto;
+    transition: all 0.3s;
 }
 
 .round-button:hover {
-    background-color: #40a9ff;
-    transform: scale(1.05);
+    background: #40a9ff;
+    transform: translateY(-2px);
+}
+
+.round-button:active {
+    transform: translateY(0);
 }

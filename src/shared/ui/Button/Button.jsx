@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './styles.module.css';
-
-export const RoundButton = ({ text, onClick, className = '' }) => {
+export const RoundButton = ({
+                                 text = 'Кнопка',
+                                 onClick
+                             }) => {
     return (
         <button
-            className={`${styles['round-button']} ${className}`}
+            className="round-button"
             onClick={onClick}
         >
             {text}
