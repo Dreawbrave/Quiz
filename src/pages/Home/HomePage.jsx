@@ -1,16 +1,25 @@
-import { RoundButton } from "../../shared/ui/Button/Button";
 import styles from './styles.module.css';
-import {MyHeader} from "../../shared/ui/Header/Header.jsx";
+import { RoundButton } from "../../shared/ui/Button/Button";
+import { MyHeader } from "../../shared/ui/Header/Header";
+import {useNavigate} from "react-router-dom";
 
 export default function HomePage() {
+    const navigate = useNavigate();
+
+    const handleCreateQuiz = () => {
+        navigate('/quiz/new');
+    };
+
     return (
         <div className={styles.pageContainer}>
             <MyHeader />
-            <RoundButton
-                text={'Создать квиз'}
-                onClick={() => console.log('Кнопка нажата')}
-                className={styles.button}
-            />
+
+            <div className={styles.content}>
+                <RoundButton
+                    text="Создать квиз"
+                    onClick={handleCreateQuiz}
+                />
+            </div>
         </div>
     );
 }

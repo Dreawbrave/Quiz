@@ -8,14 +8,13 @@ const Timer = () => {
     return (
         <div className={styles.timer}>
             <Row>
-                {/* Убираем gutter и делаем колонку на всю ширину */}
-                <Col span={24}> {/* 24 - максимальная ширина в системе сетки AntD */}
+                <Col span={24}>
                     <Card>
                         <Statistic.Countdown
                             title="Таймер обратного отсчета"
                             value={deadline}
                             format="mm:ss"
-                            style={{ fontSize: '24px' }} // Увеличиваем цифры
+                            style={{ fontSize: '24px' }}
                         />
                     </Card>
                 </Col>

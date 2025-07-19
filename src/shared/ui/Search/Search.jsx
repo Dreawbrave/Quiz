@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { Input, Card } from 'antd';
 
-export const Search = ({ className = '' }) => {
+export const Search = ({ onSearch, className = '' }) => {
     const [searchText, setSearchText] = useState('');
-
-    const onSearch = (value) => {
-        console.log('Ищем:', value);
-    };
 
     return (
         <Card className={className}>
             <Input.Search
-                placeholder="Введите запрос"
+                placeholder="Введите ID квиза"
                 allowClear
                 enterButton="Найти"
                 value={searchText}
