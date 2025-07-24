@@ -1,7 +1,8 @@
-import { QuestionCard } from "../../shared/ui/Card/QuestionCard.jsx";
+import { QuestionCard } from "../../shared/ui/QuestionCard/QuestionCard.jsx";
 import styles from './styles.module.css';
 import Timer from "../../entities/Timer/Timer.jsx";
 import { useQuizStore } from "../../features/quiz-game/model/store";
+import {useState} from "react";
 
 export default function QuizPage() {
     const { score, incrementScore } = useQuizStore();

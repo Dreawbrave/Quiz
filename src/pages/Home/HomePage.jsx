@@ -1,13 +1,14 @@
 import styles from './styles.module.css';
 import { RoundButton } from "../../shared/ui/Button/Button";
 import { MyHeader } from "../../shared/ui/Header/Header";
-import {useNavigate} from "react-router-dom";
+import {CreateCard} from "../../shared/ui/CreateCard/CreateCard.jsx";
+import { useState } from 'react';
 
 export default function HomePage() {
-    const navigate = useNavigate();
+    const [showCreateCard, setShowCreateCard] = useState(false);
 
     const handleCreateQuiz = () => {
-        navigate('/quiz/new');
+        setShowCreateCard(true);
     };
 
     return (
@@ -15,10 +16,14 @@ export default function HomePage() {
             <MyHeader />
 
             <div className={styles.content}>
-                <RoundButton
-                    text="Создать квиз"
-                    onClick={handleCreateQuiz}
-                />
+                {showCreateCard ? (
+                    <CreateCard />
+                ) : (
+                    <RoundButton
+                        text="Create quiz"
+                        onClick={handleCreateQuiz}
+                    />
+                )}
             </div>
         </div>
     );
