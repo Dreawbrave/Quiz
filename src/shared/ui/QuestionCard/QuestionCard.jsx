@@ -6,7 +6,7 @@ export const QuestionCard = ({ question, variants = [], onVariantSelect }) => {
     return (
         <div className={styles.card}>
             <h2 className={styles.cardTitle}>{question}</h2>
-
+            <img className={styles.cardImage} src="https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"/> //в последствии заменится на ссылку из бд с картинкой
             <div className={styles.buttonsContainer}>
                 {variants.map((variant, index) => (
                     <RoundButton

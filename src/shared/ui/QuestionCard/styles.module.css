@@ -19,3 +19,8 @@
     flex-direction: column;
     gap: 12px;
 }
+
+.cardImage {
+    width: 75%;
+    margin-left: 78px;
+}
